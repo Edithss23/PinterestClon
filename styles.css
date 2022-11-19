@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/* Nav Start */
+
+#navbar-pinterest{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#navbar-pinterest > div{
+    padding: 12px  8px;
+    margin: 0px 5px;
+    
+}
+
+.nav-finder{
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav-finder i{
+    color: #767676;
+}
+
+.finder{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.nav-logo a img{
+    width: 30px;
+}
+
+.nav-button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-button a:link{
+    color:black;
+}
+
+
+.nav-button.active{
+    background-color: black;
+    border-radius: 24px;
+}
+
+.nav-button.active a{
+    color: white;
+    margin: 15px;
+}
+
+.nav-icon{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon:hover{
+    background-color: #e9e9e9;
+}
+
+.nav-icon a i{
+    color: #767676;
+    font-size: 25px;
+}
+
+.img-avatar{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* Nav End */
+
+
+#content{
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.grid{
+    max-width: 1250px;
+    margin: auto;
+    column-count: 5;
+    column-gap: 20px;
+}
+
+.card-item{
+    border-radius: 20px;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-item img{
+    width: 100%;
+}
+
+
+.btn-save{
+    position: absolute;
+    display: none;
+    top: 15px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+}
+
+.btn-upload{
+    position: absolute;
+    display: none;
+    bottom: 15px;
+    right: 15px;
+    width: 100%;
+}
+
+.down-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.round-btn{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-btn i{
+    color: black;
+}
+
+.card-item:hover img{
+    filter: brightness(50%);
+}
+
+.card-item:hover .btn-save{
+    display: block;
+}
+
+.card-item:hover .btn-upload{
+    display: block;
+}
+
+.btn-save:hover{
+    background-color: rgb(200, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+      column-count: 3;
+    }
+  }
+
+
